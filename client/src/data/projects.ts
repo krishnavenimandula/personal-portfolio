@@ -6,7 +6,7 @@ export const projects = [
     technologies: ["React", "Node.js", "MongoDB", "Express"],
     demoLink: "https://ecommerce-shophub-frontend.onrender.com",
     repoLink: "https://github.com/krishnavenimandula/ecommerce-shophub",
-    imageUrl: "../assets/images/ecommerce.png",
+    imageUrl: "/portfolio/assets/images/ecommerce.png",
   },
   {
     title: "Flixxit — A streaming platform",
@@ -15,6 +15,6 @@ export const projects = [
     technologies: ["React", "Node.js", "MongoDB", "Express"],
     demoLink: "https://flixxit-ui-bs9v.onrender.com/",
     repoLink: "https://github.com/krishnavenimandula/flixxit",
-    imageUrl: "../assets/images/flixit.png",
+    imageUrl: "/portfolio/assets/images/flixit.png",
   },
 ];
