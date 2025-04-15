@@ -5,7 +5,7 @@ const Portfolio = () => {
   return (
     <section
       id="portfolio"
-      className="section section-alt bg-portfolio-black text-white"
+      className="section section-alt bg-portfolio-black text-white pt-5 pb-5"
     >
       <div className="container mx-auto px-4">
         <SectionHeading title="My" highlight="Portfolio" />
@@ -16,7 +16,9 @@ const Portfolio = () => {
               <div className="md:flex items-center">
                 <div className="md:w-1/2 mb-6 md:mb-0 md:pr-6">
                   <div className="aspect-video bg-card rounded-lg overflow-hidden relative">
-                    <div className="absolute inset-0 bg-gradient-to-br from-primary/40 to-primary/20 flex items-center justify-center"></div>
+                    <div className="absolute inset-0 bg-gradient-to-br from-primary/40 to-primary/20 flex items-center justify-center">
+                      <img src={project.imageUrl} alt="" />
+                    </div>
                   </div>
                 </div>
                 <div className="md:w-1/2">
@@ -38,7 +40,7 @@ const Portfolio = () => {
                     ))}
                   </div>
 
-                  <div className="flex flex-wrap gap-4">
+                  <div className="flex flex-wrap gap-4 font-medium">
                     {project.demoLink && (
                       <button className="flex items-center bg-mint-green text-black p-3">
                         <a

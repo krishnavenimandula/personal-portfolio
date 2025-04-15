@@ -7,8 +7,6 @@ const navLinks = [
   { name: "Experience", path: "#experience" },
   { name: "Education & Certifications", path: "#education" },
   { name: "Portfolio", path: "#portfolio" },
-  { name: "Contact", path: "#contact" },
-  { name: "Resume", path: "/resume", isPage: true },
 ];
 
 const Navbar = () => {

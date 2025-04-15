@@ -1,0 +1,22 @@
+.border-line-animation {
+  background: linear-gradient(270deg, #55e6a5, transparent, #55e6a5);
+  background-size: 200% 200%;
+  animation: border-move 4s linear infinite;
+  pointer-events: none;
+  z-index: 0;
+  border-radius: 0.75rem;
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+  padding: 2px;
+}
+
+@keyframes border-move {
+  0% {
+    background-position: 200% 0%;
+  }
+  100% {
+    background-position: -200% 0%;
+  }
+}

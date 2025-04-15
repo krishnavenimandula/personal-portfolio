@@ -10,9 +10,9 @@ const Experience = () => {
       <div className="container mx-auto px-4">
         <SectionHeading title="Work" highlight="Experience" />
 
-        <div className="max-w-3xl mx-auto">
+        <div className="">
           {experience.map((job, index) => (
-            <div className="relative pl-8 sm:pl-32 py-6 group">
+            <div className="relative group">
               <div className="flex flex-col sm:flex-row items-start mb-1 group-hover:text-primary transition-colors">
                 <div className="font-medium text-xl">{job.title}</div>
                 <div className="sm:ml-auto text-sm text-muted-foreground">
@@ -31,7 +31,7 @@ const Experience = () => {
                 {job.responsibilities.map((responsibility, respIndex) => (
                   <div className="flex items-start">
                     <div className="w-1.5 h-1.5 rounded-full bg-primary mt-1.5 mr-2"></div>
-                    <p>{responsibility}</p>
+                    <li>{responsibility}</li>
                   </div>
                 ))}
               </div>
