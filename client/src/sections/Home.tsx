@@ -6,7 +6,7 @@ const Home = () => {
       id="home"
       className="min-h-screen pt-24 pb-16 flex items-center relative overflow-hidden text-white"
       style={{
-        backgroundImage: "url('/portfolio/assets/images/banner.jpg')",
+        backgroundImage: "url('/portfolio/dist/assets/images/banner.jpg')",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}
