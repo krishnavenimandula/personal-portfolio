@@ -16,7 +16,6 @@ import {
   SiJest,
   SiBabel,
   SiWebpack,
-  SiCplusplus,
 } from "react-icons/si";
 
 export const skills = [

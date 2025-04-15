@@ -5,12 +5,12 @@ const navLinks = [
   { name: "Home", path: "#home" },
   { name: "Skills", path: "#skills" },
   { name: "Experience", path: "#experience" },
-  { name: "Education & Certifications", path: "#education" },
   { name: "Portfolio", path: "#portfolio" },
+  { name: "Education & Certifications", path: "#education" },
 ];
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
   const [activeLink, setActiveLink] = useState("");
   const { hash } = useLocation();
 
@@ -56,8 +56,7 @@ const Navbar = () => {
               key={link.path}
               to={link.path}
               className={`text-800 hover:text-primary transition-colors nav-link ${
-                (link.isPage && location.pathname === link.path) ||
-                (!link.isPage && activeLink === link.path)
+                location.pathname === link.path || activeLink === link.path
                   ? "active text-primary font-bold text-mint-green"
                   : ""
               }`}

@@ -1,4 +1,4 @@
-import { FaDownload } from "react-icons/fa";
+// import { FaDownload } from "react-icons/fa";
 
 const Home = () => {
   return (
@@ -6,7 +6,7 @@ const Home = () => {
       id="home"
       className="min-h-screen pt-24 pb-16 flex items-center relative overflow-hidden text-white"
       style={{
-        backgroundImage: "url('src/assets/images/banner.jpg')",
+        backgroundImage: "url('../assets/images/banner.jpg')",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}

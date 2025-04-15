@@ -11,7 +11,7 @@ const Portfolio = () => {
         <SectionHeading title="My" highlight="Portfolio" />
 
         <div className="max-w-5xl mx-auto">
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <div className="bg-background p-6 md:p-8 rounded-xl border hover:border-mint-green/80 transition-all mb-8 last:mb-0 border-mint-green/30">
               <div className="md:flex items-center">
                 <div className="md:w-1/2 mb-6 md:mb-0 md:pr-6">

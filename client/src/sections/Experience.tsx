@@ -11,7 +11,7 @@ const Experience = () => {
         <SectionHeading title="Work" highlight="Experience" />
 
         <div className="">
-          {experience.map((job, index) => (
+          {experience.map((job) => (
             <div className="relative group">
               <div className="flex flex-col sm:flex-row items-start mb-1 group-hover:text-primary transition-colors">
                 <div className="font-medium text-xl">{job.title}</div>
@@ -28,7 +28,7 @@ const Experience = () => {
               </div>
 
               <div className="text-muted-foreground space-y-2 text-secondary-gray">
-                {job.responsibilities.map((responsibility, respIndex) => (
+                {job.responsibilities.map((responsibility) => (
                   <div className="flex items-start">
                     <div className="w-1.5 h-1.5 rounded-full bg-primary mt-1.5 mr-2"></div>
                     <li>{responsibility}</li>
