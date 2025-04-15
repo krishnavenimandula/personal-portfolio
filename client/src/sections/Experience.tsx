@@ -12,7 +12,7 @@ const Experience = () => {
 
         <div className="">
           {experience.map((job) => (
-            <div className="relative group">
+            <div className="relative group mt-5">
               <div className="flex flex-col sm:flex-row items-start mb-1 group-hover:text-primary transition-colors">
                 <div className="font-medium text-xl">{job.title}</div>
                 <div className="sm:ml-auto text-sm text-muted-foreground">

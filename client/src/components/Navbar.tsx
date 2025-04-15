@@ -52,9 +52,10 @@ const Navbar = () => {
       <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="hidden md:flex items-center space-x-6">
           {navLinks.map((link) => (
-            <Link
+            <a
+              href={link.path}
               key={link.path}
-              to={link.path}
+              onClick={() => setActiveLink(link.path)}
               className={`text-800 hover:text-primary transition-colors nav-link ${
                 location.pathname === link.path || activeLink === link.path
                   ? "active text-primary font-bold text-mint-green"
@@ -62,7 +63,7 @@ const Navbar = () => {
               }`}
             >
               {link.name}
-            </Link>
+            </a>
           ))}
         </div>
       </nav>

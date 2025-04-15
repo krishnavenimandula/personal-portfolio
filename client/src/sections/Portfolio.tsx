@@ -9,8 +9,16 @@ const Portfolio = () => {
     >
       <div className="container mx-auto px-4">
         <SectionHeading title="My" highlight="Portfolio" />
-
-        <div className="max-w-5xl mx-auto">
+        <div>
+          <p className="font-bold">Note :</p>
+          <p className="text-secondary-gray">
+            Once you click on the Live Demo, please give sometime to load for
+            the first time. as I have hosted these application on free tier
+            renderer.com. I will take 20 seconds to load the initial page.
+            Thanks :)
+          </p>
+        </div>
+        <div className="max-w-5xl mx-auto pt-5">
           {projects.map((project) => (
             <div className="bg-background p-6 md:p-8 rounded-xl border hover:border-mint-green/80 transition-all mb-8 last:mb-0 border-mint-green/30">
               <div className="md:flex items-center">
